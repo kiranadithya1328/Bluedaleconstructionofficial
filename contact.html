@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Blue Dale Construction</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Get in touch with Blue Dale Construction for your next building project. Request a quote, call our engineers, or send a WhatsApp message directly.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader"></div>
+    <div class="preloader-text">BLUE DALE CONSTRUCTION</div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo.jpeg" alt="Blue Dale Construction Logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="logo-text" style="display: flex; flex-direction: column;">
+          <span style="font-size: 1.3rem; line-height: 1.1; font-family: var(--font-title); font-weight: 700; color: var(--text-light); letter-spacing: 1px;">BLUE DALE</span>
+          <span style="font-size: 0.72rem; line-height: 1; font-family: var(--font-body); font-weight: 600; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px;">CONSTRUCTION</span>
+        </div>
+      </a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="works.html" class="nav-link">Works Done</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <h1>Contact For Projects</h1>
+    <p>Let's collaborate to build something extraordinary</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section-layout">
+    <div class="container">
+      <div class="contact-layout">
+        
+        <!-- Contact Form Container -->
+        <div class="contact-card-container reveal reveal-left">
+          <h3>Project Inquiry Form</h3>
+          <form id="projectContactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="emailAddr">Email Address *</label>
+                <input type="email" id="emailAddr" placeholder="e.g. john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phoneNum">Phone Number *</label>
+                <input type="tel" id="phoneNum" placeholder="e.g. +91 88380 37125" required>
+              </div>
+              <div class="form-group">
+                <label for="projectType">Project Type *</label>
+                <select id="projectType" required>
+                  <option value="" disabled selected>Select project type...</option>
+                  <option value="residential">Residential Villa / House</option>
+                  <option value="commercial">Commercial Building / Hub</option>
+                  <option value="renovation">Renovation &amp; Makeover</option>
+                  <option value="architectural">Architectural 3D Drafting</option>
+                  <option value="interior">Interior Design Work</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="budgetRange">Estimated Budget (Optional)</label>
+              <select id="budgetRange">
+                <option value="not-sure">Under Discussion / Not Sure</option>
+                <option value="low">Under ₹25 Lakhs</option>
+                <option value="medium">₹25 Lakhs - ₹75 Lakhs</option>
+                <option value="high">₹75 Lakhs - ₹2 Crores</option>
+                <option value="premium">Above ₹2 Crores</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="projectDetails">Project Details &amp; Location *</label>
+              <textarea id="projectDetails" rows="5" placeholder="Please describe the site location, sizing, and your expectations..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start; padding: 14px 35px;">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Contact Info Column -->
+        <div class="contact-info-column reveal reveal-right">
+          <!-- Office Info -->
+          <div class="info-box">
+            <h3>Head Office</h3>
+            
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-text">
+                <h4>Address</h4>
+                <p id="contactInfoAddress">Blue Dale Constructions, No-4 Telugu Bramana Street, Gandhipark, Coimbatore - 641001, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-text">
+                <h4>Direct Call</h4>
+                <p><a href="tel:+918838037125" id="contactInfoPhone"><span id="contactInfoPhoneText">+91 88380 37125</span></a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="info-text">
+                <h4>WhatsApp Business</h4>
+                <p><a href="https://wa.me/919345827074" target="_blank" id="contactInfoWhatsapp">Chat on WhatsApp</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="far fa-envelope"></i></div>
+              <div class="info-text">
+                <h4>Email Support</h4>
+                <p><a href="mailto:shakthiarasu@gmail.com" id="contactInfoEmail"><span id="contactInfoEmailText">shakthiarasu@gmail.com</span></a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="far fa-clock"></i></div>
+              <div class="info-text">
+                <h4>Working Hours</h4>
+                <p id="contactInfoHours">Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stylized Maps Container -->
+          <div class="map-container reveal reveal-scale">
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt"></i>
+              <h4>Office Location Map</h4>
+              <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 10px;">No-4 Telugu Bramana Street, Gandhipark, Coimbatore</p>
+              <a href="https://maps.google.com" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 15px;">Open in Google Maps</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="padding: 0 0 40px 0;">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo-link" style="margin-bottom: 20px; display: inline-flex;">
+            <img src="logo.jpeg" alt="Blue Dale Construction Logo" class="logo-img" style="height: 40px;" onerror="this.style.display='none'">
+            <div class="logo-text" style="display: flex; flex-direction: column;">
+              <span style="font-size: 1.2rem; line-height: 1.1; font-family: var(--font-title); font-weight: 700; color: var(--text-light); letter-spacing: 1px;">BLUE DALE</span>
+              <span style="font-size: 0.68rem; line-height: 1; font-family: var(--font-body); font-weight: 600; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px;">CONSTRUCTION</span>
+            </div>
+          </a>
+          <p>Premium quality craftsmanship and structural excellence. Building your future foundations with precision, safety, and modern designs.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/bluedaleconstructions?igsh=bmR3aHUxeHY4am5m" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919345827074" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="mailto:shakthiarasu@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="works.html">Works Done</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">Residential Build</a></li>
+            <li><a href="services.html">Commercial Dev</a></li>
+            <li><a href="services.html">Renovations</a></li>
+            <li><a href="services.html">Architectural Planning</a></li>
+            <li><a href="services.html">Interior Designing</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Blue Dale Constructions, No-4 Telugu Bramana Street, Gandhipark, Coimbatore - 641001, Tamil Nadu, India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918838037125">+91 88380 37125</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/919345827074" target="_blank">Chat on WhatsApp</a>
+            </li>
+            <li>
+              <i class="far fa-envelope"></i>
+              <a href="mailto:shakthiarasu@gmail.com">shakthiarasu@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Blue Dale Construction. All Rights Reserved. Designed for Excellence.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
