@@ -34,6 +34,12 @@ if (!isPlaceholder(firebaseConfig)) {
     window.db = firebase.firestore();
     window.auth = firebase.auth();
     window.storage = firebase.storage();
+
+    // DEBUG
+console.log("Firebase initialized");
+console.log("window.db =", window.db);
+console.log("window.auth =", window.auth);
+console.log("window.storage =", window.storage);
     
     window.firebaseEnabled = true;
     window.isFirebaseDemo = false;
