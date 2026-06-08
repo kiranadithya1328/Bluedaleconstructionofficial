@@ -14,7 +14,7 @@ const firebaseConfig = {
 
 // Check if configuration has been updated by user
 const isPlaceholder = (config) => {
-  return !config.apiKey || config.apiKey.startsWith("YOUR_");
+  return !config.apiKey || config.apiKey.startsWith("AIzaSyBZA951U2f_V877AohKQ4Hu292MzGHpXRE");
 };
 
 // Global variables to hold database state
